@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tailwind CSS Style Guide</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+</head>
+<body>
+
+<div id="app" class="font-sans">
+  <div class="max-w-xl mx-auto pt-12 px-6">
+    <h1 class="font-thin uppercase text-4xl text-grey-light tracking-wide text-center mb-20">
+      Your Tailwind Style Guide
+    </h1>
+  </div>
+
+  <tailwind-styleguide></tailwind-styleguide>
+</div>
+
+<script>
+    window.viewData = <%- viewData %>;
+</script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="/js/app.js"></script>
+
+</body>
+</html>
