@@ -3,12 +3,12 @@ let express = require('express');
 let path = require('path');
 let _ = require('lodash');
 
-// TODO make this configurable!
-let tailwindConfigFile = path.resolve(__dirname, '../tailwind.js');
-let tailwindConfig = require(tailwindConfigFile);
+let tailwindConfig;
 let projectRoot = path.resolve(__dirname, '..');
 
 async function startServer(configPath) {
+    tailwindConfig = require(configPath);
+
     let viewData = getViewData();
 
     let app = express();
