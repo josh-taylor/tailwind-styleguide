@@ -7,7 +7,7 @@ let tailwindConfig;
 let projectRoot = path.resolve(__dirname, '..');
 
 async function startServer(configPath) {
-    tailwindConfig = require(configPath);
+    tailwindConfig = require(path.resolve(configPath));
 
     let viewData = getViewData();
 
