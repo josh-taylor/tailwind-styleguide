@@ -1,6 +1,6 @@
 {
   "name": "laravel-mix-tailwind-styleguide",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Laravel Mix plugin for generating a styleguide for your Tailwind project",
   "main": "src/index.js",
   "repository": {
